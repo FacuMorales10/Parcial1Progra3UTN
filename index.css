@@ -1,0 +1,153 @@
+/* --- Estilos generales --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #161616; /* f) Fondo del cuerpo con un negro más claro */
+}
+
+ul {
+    padding: 0px;
+}
+
+li {
+    list-style: none;
+}
+
+/* --- Estilos Header (encabezado) --- */
+header {
+    display: flex;
+    background-color: #0000001a; /* c) Color de fondo del encabezado */
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px #0000001a;
+}
+
+#icono-principal {
+    width: 55px; /* l) Ancho del icono principal */
+    height: 55px; /* l) Alto del icono principal */
+}
+
+#titulo-principal {
+    color: white;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#listado-opciones {
+    display: flex;
+    align-items: center;
+    height: 55px;
+    padding-top: 15px;
+}
+
+a {
+    margin-left: 15px;
+    margin-right: 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+}
+
+a:hover {
+    color: gray;
+}
+ 
+/* --- Estilos Main (contenido) --- */
+.h2-separador {
+    background-color: black;
+    padding: 10px;
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#listado-hamburguesas,
+#listado-bebidas,
+#listado-tragos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* e) Contenedores (cards) de cada producto con fondo negro */
+.li-hamburguesa,
+.li-bebida,
+.li-tragos {
+    background-color: #000000; 
+    width: 250px;
+    padding: 15px; /* g) Espaciado interno en todos sus lados minimo 15px */
+    margin: 15px; /* h) Espaciado externo en todos sus lados minimo 15px */
+    border-radius: 16px; /* i) Borde de esquinas redondeados minimo 16px */
+}
+
+/* j) Ajustes para todas las imagenes de los productos */
+.img-producto {
+    width: 100px;
+    height: 180px;
+    object-fit: cover; /* Evita que las fotos se deformen al estirarse */
+}
+
+/* k) Titulo del producto alineado al centro */
+.nombre-producto {
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* a) Color de fuente de los precios */
+.precio-producto{
+    color: #ca9013;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* b) Color de fuente de las descripciones */
+.descripcion-producto {
+    color: #808080;
+    min-height: 110px;
+    max-height: 110px;
+}
+
+.btn-sumar-a-carrito {
+    padding: 5px;
+    margin-top: 15px;
+    background-color: green;
+    border-radius: 8px;
+    border: none;
+    width: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-restar-a-carrito {
+    padding: 5px;
+    margin-top: 15px;
+    background-color: red;
+    border-radius: 8px;
+    border: none;
+    width: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* --- Estilos Footer (pie de pagina) --- */
+footer {
+    background-color: #000000; /* d) Color de fondo del footer */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 13px;
+}
