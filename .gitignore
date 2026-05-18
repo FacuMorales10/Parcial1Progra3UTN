@@ -1,0 +1,14 @@
+# Compilados
+*.class
+*.log
+
+# Carpetas de IDEs (IntelliJ, Eclipse, NetBeans, VS Code)
+.idea/
+*.iml
+.settings/
+.classpath
+.project
+.vscode/
+bin/
+out/
+target/
