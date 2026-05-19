@@ -79,6 +79,13 @@ a:hover {
     flex-wrap: wrap;
 }
 
+/* Ajuste para que las botellas no se recorten con zoom y mantengan su silueta */
+#listado-bebidas .img-producto,
+#listado-tragos .img-producto {
+    object-fit: contain;
+    background-color: #111111; /* Un fondo oscuro sutil para que la botella flote en el centro */
+}
+
 /* e) Contenedores (cards) de cada producto con fondo negro */
 .li-hamburguesa,
 .li-bebida,
@@ -92,9 +99,13 @@ a:hover {
 
 /* j) Ajustes para todas las imagenes de los productos */
 .img-producto {
-    width: 100px;
-    height: 180px;
-    object-fit: cover; /* Evita que las fotos se deformen al estirarse */
+  width: 100%;              
+    height: 180px;             
+    object-fit: cover;         
+    object-position: center;   
+    border-top-left-radius: 16px;  
+    border-top-right-radius: 16px; 
+    display: block;
 }
 
 /* k) Titulo del producto alineado al centro */

@@ -1,0 +1,131 @@
+/* --- Estilos generales --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #161616; 
+    color: white;
+}
+
+/* --- Estilos Header (encabezado) --- */
+header {
+    display: flex;
+    background-color: #000000;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px #0000001a;
+}
+
+#icono-principal {
+    width: 55px;
+    height: 55px;
+}
+
+#titulo-principal {
+    color: white;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#listado-opciones {
+    display: flex;
+    align-items: center;
+    height: 55px;
+    padding-top: 15px;
+}
+
+a {
+    margin-left: 15px;
+    margin-right: 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+}
+
+a:hover {
+    color: gray;
+}
+
+/* --- Estilos Main (contenido) --- */
+main {
+    text-align: center;
+    padding: 30px 10px;
+}
+
+/* m) Contenedor de la tabla centrado */
+#contenedor-tabla {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+/* a, b) Estilos obligatorios para la tabla */
+#tabla-carrito {
+    border-collapse: collapse; 
+    width: 100%;
+    max-width: 750px;         
+    background-color: #000000; 
+}
+
+/* c, e, g) Estilos para las celdas de datos (td) */
+#tabla-carrito td {
+    border: 1px solid #ca9013; 
+    padding: 12px;             
+    font-size: 16px;
+    text-align: center;
+}
+
+/* a, f, h) Estilos específicos para la fila del encabezado */
+.fila-header-carrito td {
+    background-color: #111111; 
+    font-weight: bold;         
+    color: white;
+    padding: 15px 12px;        
+}
+
+/* i) El valor total final a pagar (h2) */
+#valor-final {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    color: white;
+    font-weight: 600;
+}
+
+/* l) Botón Limpiar Carrito con fondo rojo */
+.btn-limpiar-carrito {
+    background-color: #d9534f; 
+    color: white;              
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;        /* Esquinas redondeadas estéticas */
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-limpiar-carrito:hover {
+    background-color: #c9302c; /* Efecto hover sutil */
+}
+
+/* --- Estilos Footer --- */
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 13px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
